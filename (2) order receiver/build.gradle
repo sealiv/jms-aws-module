@@ -1,0 +1,21 @@
+plugins {
+	id 'org.springframework.boot' version '2.7.1'
+	id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+	id 'java'
+}
+
+group = 'org.aleks4ay'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '1.8'
+
+wrapper.gradleVersion = '7.4.2'
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter-activemq'
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	implementation 'org.json:json:20220320'
+}
